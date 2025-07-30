@@ -447,7 +447,7 @@ ul li img {
   <!-- Header -->
 <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
   <div class="container">
-    <a class="navbar-brand fw-bold fs-4 text-success" href="#">Insurance</a>
+    <a class="navbar-brand fw-bold fs-4 text-success" href="#"><span class="col1">Sure</span>Insure</a>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
   <span class="hamburger-icon d-inline-block">
     <div></div><div></div><div></div>
@@ -460,16 +460,16 @@ ul li img {
     <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
       <ul class="navbar-nav mb-2 mb-lg-0 me-5">
         <li class="nav-item">
-          <a class="nav-link nav1" href="#">Home</a>
+          <a class="nav-link nav1" href="./">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav1" href="#">About Us</a>
+          <a class="nav-link nav1" href="#about">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav1" href="#">Services</a>
+          <a class="nav-link nav1" href="#services">Services</a>
         </li>
       </ul>
-      <a href="#" class="btn custom-quote-btn">Get A Quote</a>
+      <a href="#contact" class="btn custom-quote-btn">Get A Quote</a>
     </div>
   </div>
 </nav>
@@ -507,11 +507,11 @@ ul li img {
     </div>
   </section>
   
-<section class="about-right py-5">
+<section class="about-right py-5" id="about">
   <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6 position-relative text-center">
-        <img src="assets/about-img.jpg" alt="Group" class="img-fluid rounded shadow-sm w-100" />
+        <img src="assets/about-img.jpg" alt="Group" class="img-fluid rounded shadow-sm " />
         
         <!-- Top Badge -->
         <div class="badge-box bg-white shadow-sm position-absolute top-0 end-0 m-3 p-2 rounded">
@@ -591,7 +591,7 @@ ul li img {
   </div>
 </section>
 
-<section class="services-section">
+<section class="services-section" id="services">
   <p class="text-uppercase text-success fw-semibold mb-5">• &nbsp;&nbsp; S e r v i c e s</p>
   <h2 class="display-7 col1 mb-3">Complete <span style="font-weight: 900;">Insurance Coverage</span> Options</h2>
   <p class="text-muted mb-5">We offer a full range of insurance services designed to deliver peace of mind, no matter your needs.</p>
@@ -836,7 +836,7 @@ ul li img {
   </div>
 </section>
 
-<section class="contact-section py-5">
+<section class="contact-section py-5" id="contact">
   <div class="container">
     <div class="row mb-5 text-center">
       <div class="col-12">
@@ -853,8 +853,8 @@ ul li img {
       <div class="col-lg-6">
         <div class="rounded overflow-hidden position-relative" style="height: 80%;">
           <img src="assets/contact-us.jpg" alt="Agent" class="img-fluid w-100 rounded" />
-          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center px-4 text-white" style="background: rgba(0, 0, 0, 0.4);">
-            <div class="mb-3">
+          <div class="position-absolute bottom-0 start-0 w-100 px-4 py-3 text-white" style="background: rgba(0, 0, 0, 0.4);">
+            <div class="mb-3 ">
               <i class="bi bi-telephone-fill me-2"></i>
               <span class="fw-semibold">Contact Number:</span> <br />
               <span class="fs-5 fw-bold">+01 789 852 654</span>
@@ -891,7 +891,7 @@ ul li img {
                 <textarea class="form-control" rows="4" placeholder="Message"></textarea>
               </div>
               <div class="col-12">
-                <button type="submit" class="btn btn-success w-100 py-2">Submit Message</button>
+                <button type="submit" class="btn btn-success w-100 py-2 pt-lg-3 pb-lg-3">Submit Message</button>
               </div>
             </div>
           </form>
@@ -919,9 +919,9 @@ ul li img {
       <div class="col-lg-2 col-md-6">
         <h6 class="fw-semibold mb-3">Quick Links</h6>
         <ul class="list-unstyled">
-          <li><a href="#" class="footer-link">Home</a></li>
-          <li><a href="#" class="footer-link">About Us</a></li>
-          <li><a href="#" class="footer-link">Services</a></li>
+          <li><a href="./" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">About Us</a></li>
+          <li><a href="#services" class="footer-link">Services</a></li>
         </ul>
       </div>
 
