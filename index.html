@@ -21,6 +21,7 @@
 .nav1{
   color: #004F4C;
   font-weight: 600;
+  margin-left: 20px;
 }
 
 .nav1:hover {
@@ -29,7 +30,7 @@
 
 .hero-section {
   position: relative;
-  margin-top: 0 !important;
+  margin: 0 !important;
   padding-top: 2rem;
   background: url('assets/hero-bg.jpg') no-repeat center center/cover;
   background-attachment: fixed;
@@ -59,6 +60,8 @@
 .hero-section .container {
   position: relative;
   z-index: 2;
+  margin: 140px;
+  margin-top: 60px !important;
 }
 
 /* Quote Button in Header */
@@ -102,6 +105,7 @@
 
 .about-us-section {
   font-family: 'Poppins', sans-serif;
+  margin: 30px 170px;
 }
 
 .badge-box {
@@ -141,6 +145,9 @@ ul li img {
       background: #f1f5f9;
       text-align: center;
       position: relative;
+    }
+    .service1{
+      margin: 30px 150px;
     }
 
 
@@ -195,6 +202,14 @@ ul li img {
 .service-card:hover .card-text,
 .service-card:hover .learn-more {
   color: white;
+}
+
+.why-choose-section1{
+  margin: 0px 150px;
+}
+
+.how-it-works1{
+  margin: 0px 150px !important;
 }
 
 
@@ -407,7 +422,9 @@ ul li img {
 .contact-section .btn-success:hover {
   background-color: #095c3f;
 }
-
+.contact1{
+  margin: 0px 150px;
+}
 
 .footer-section {
   background-color: #004F4C; /* Dark teal background */
@@ -437,6 +454,23 @@ ul li img {
 .footer-section .footer-link:hover {
   color: #009A5E;
 }
+@media (max-width: 1439px) {
+  .about-us-section{
+    margin: 0 !important;
+  }
+  .service1{
+    margin: 0 !important;
+  }
+  .why-choose-section1{
+    margin: 0 !important;
+  }
+  .how-it-works1{
+    margin: 0 !important;
+  }
+  .contact1 {
+    margin: 0 !important;
+  }
+}
 
 
     </style>
@@ -458,18 +492,18 @@ ul li img {
 </button>
 
     <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-      <ul class="navbar-nav mb-2 mb-lg-0 me-5">
-        <li class="nav-item">
+      <ul class="navbar-nav mb-2 mb-lg-0 me-5" >
+        <li class="nav-item" >
           <a class="nav-link nav1" href="./">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" >
           <a class="nav-link nav1" href="#about">About Us</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item"  >
           <a class="nav-link nav1" href="#services">Services</a>
         </li>
       </ul>
-      <a href="#contact" class="btn custom-quote-btn">Get A Quote</a>
+      <a href="#contact" class="btn custom-quote-btn" style="margin-left: 40px;">Get A Quote</a>
     </div>
   </div>
 </nav>
@@ -507,7 +541,7 @@ ul li img {
     </div>
   </section>
   
-<section class="about-right py-5" id="about">
+<section class="about-right about-us-section py-5" id="about">
   <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6 position-relative text-center">
@@ -597,7 +631,7 @@ ul li img {
   <p class="text-muted mb-5">We offer a full range of insurance services designed to deliver peace of mind, no matter your needs.</p>
 
   <div class="container">
-    <div class="row g-4">
+    <div class="row service1 g-4">
       <!-- Card 1 -->
       <div class="col-md-6 col-lg-3">
         <div class="card service-card">
@@ -648,9 +682,9 @@ ul li img {
     </div>
   </div>
 </section>
-<section class="why-choose-section py-5 gap1">
+<section class="why-choose-section py-5 ">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row why-choose-section1 align-items-center">
       
       <!-- LEFT CONTENT -->
       <div class="col-lg-6 mb-5 mb-lg-0">
@@ -726,14 +760,14 @@ ul li img {
 </section>
 
 <section class="how-it-works py-5 bg-light ">
-  <div class="container text-center">
+  <div class="container text-center how-it-works1">
     <p class="text-success text-uppercase fw-semibold small mt-3 mb-5">• &nbsp;&nbsp; H o w &nbsp;&nbsp; I t &nbsp;&nbsp; W o r k</p>
       <h2 class="display-7 col1 mb-3">A Simple Process to <span style="font-weight: 900;">Get Covered</span> with Ease.</h2>
     <p class="text-muted mb-5">
       Our insurance services are designed to give you peace of mind—tailored to your needs and delivered in just a few easy steps.
     </p>
 
-    <div class="d-flex flex-wrap flex-lg-nowrap justify-content-center align-items-start gap-4 position-relative">
+    <div class="d-flex flex-wrap how-it-works1 flex-lg-nowrap justify-content-center align-items-start  position-relative">
       
       <!-- Step 1 -->
       <div class="step-box position-relative text-start bg-white p-4 shadow-sm rounded-4">
@@ -838,7 +872,7 @@ ul li img {
 
 <section class="contact-section py-5" id="contact">
   <div class="container">
-    <div class="row mb-5 text-center">
+    <div class="row mb-5 text-center contact1">
       <div class="col-12">
         <p class="text-success small fw-semibold mb-5">• &nbsp;C O N T A C T &nbsp; U S</p>
         <h2 class="display-7 col1 mb-3">Personalized <span style="font-weight: 900;">Insurance</span> support and assistance today</h2>
@@ -848,7 +882,7 @@ ul li img {
       </div>
     </div>
 
-    <div class="row g-4 align-items-start">
+    <div class="row g-4 align-items-start contact1">
       <!-- Left: Image and contact info -->
       <div class="col-lg-6">
         <div class="rounded overflow-hidden position-relative" style="height: 80%;">
@@ -870,7 +904,7 @@ ul li img {
 
       <!-- Right: Contact form -->
       <div class="col-lg-6">
-        <div class="bg-light p-4 p-md-5 mt-4 rounded-4">
+        <div class="bg-light p-4 p-md-5 rounded-4">
           <h4 class="fw-bold">Get in <span class="text-success">touch</span> with us</h4>
           <p class="text-muted mb-4">Complete the form to start your personalized insurance journey.</p>
           <form>
